@@ -8,7 +8,7 @@
   <title>The Watch Spot</title>
   
   <script type="module" crossorigin src="/watchspot/assets/index-e1fef0a7.js"></script>
-  <link rel="stylesheet" href="/watchspot/assets/index-2d2e0f9a.css">
+  <link rel="stylesheet" href="/watchspot/assets/index-b8601459.css">
 </head>
 
 <body>
@@ -699,9 +699,100 @@
 </footer>
 
   <!-- Modal -->
-  <header class="header">
+  <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close" data-modal-close type="button">
+      <svg width="10" height="10" class="modal-close-icon">
+        <use href="/watchspot/assets/icons-e8599dac.svg#close-20"></use>
+      </svg>
+    </button>
 
-</header>
+    <div class="modal-wrap">
+      <div class="modal-catalog-wrap">
+        <img
+          class="modal-catalog-img"
+          src="/watchspot/assets/catalog-pic-1-b8d5763b.png"
+          srcset="/watchspot/assets/catalog-pic-1-1x-479d6438.webp 1x, /watchspot/assets/catalog-pic-1-2x-8b01223a.webp 2x"
+          alt="image"
+          width="276"
+          height="274"
+        />
+
+          <p class="modal-text-wrap-title">
+            Tube Watch S42 Date Steel With Black...
+          <span class="modal-text-wrap-text">€395</span></p>
+        
+      </div>
+
+      <form class="modal-form">
+        <div class="modal-user-input">
+          <div class="modal-input-wrap">
+            <label for="user-name" class="modal-label-text">Full name</label>
+
+            <input
+              type="text"
+              class="modal-input"
+              placeholder="Enter your full name"
+              name="user-name"
+              pattern="^(\w\w+)\s(\w+)$"
+              required
+              id="user-name"
+            />
+          </div>
+
+          <div class="modal-input-wrap">
+            <label for="user-name" class="modal-label-text">Email</label>
+
+            <input
+              type="text"
+              class="modal-input"
+              placeholder="Enter your email"
+              name="user-name"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+              id="user-name"
+            />
+          </div>
+
+          <div class="modal-input-wrap">
+            <label for="user-name" class="modal-label-text">Card number</label>
+
+            <input
+              type="text"
+              class="modal-input"
+              placeholder="Enter card"
+              name="user-name"
+              pattern="[0-9]*"
+              required
+              id="user-name"
+            />
+          </div>
+
+          <div class="modal-input-wrap">
+            <label for="user-comment" class="modal-label-text">Comments</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              class="modal-textarea"
+              placeholder="Enter your text"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="modal-submit">
+          <button class="modal-sent-btn" type="submit">submit</button>
+          <p class="modal-sent-btn-text">
+            By clicking on “Submit” button, you agree to our <a href="./" class="modal-link">Privacy Policy</a>, 
+            and allow Promodo to use this information for marketing purposes. 
+            
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="./js/modal.js"></script>
 
   <!-- Mob Menu -->
   <header class="header">
